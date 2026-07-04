@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Work — Natalya Pavlova Career & Leadership Advisory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:       #1a1a1a;
+      --ink-soft:  #4a4a4a;
+      --ink-muted: #888;
+      --rule:      #d8d2c8;
+      --bg:        #faf8f5;
+      --bg-warm:   #f2ede6;
+      --accent:    #2c4a3e;
+      --accent-lt: #e8efe9;
+      --serif:     'Cormorant Garamond', Georgia, serif;
+      --sans:      'Inter', system-ui, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NAV ── */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 28px 48px;
+      border-bottom: 1px solid var(--rule);
+      position: sticky;
+      top: 0;
+      background: var(--bg);
+      z-index: 100;
+    }
+    .nav-name {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: 1.05rem;
+      letter-spacing: 0.02em;
+      color: var(--ink);
+      text-decoration: none;
+    }
+    .nav-cta {
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid var(--accent);
+      padding-bottom: 1px;
+      transition: opacity 0.2s;
+    }
+    .nav-cta:hover { opacity: 0.65; }
+
+    /* ── PAGE HEADER ── */
+    .page-header {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 72px 48px 56px;
+      border-bottom: 1px solid var(--rule);
+    }
+    .page-eyebrow {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 24px;
+    }
+    .page-header h1 {
+      font-family: var(--serif);
+      font-weight: 300;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.15;
+      color: var(--ink);
+      margin-bottom: 20px;
+    }
+    .page-header p {
+      font-size: 0.95rem;
+      color: var(--ink-soft);
+      max-width: 540px;
+      line-height: 1.75;
+    }
+
+    /* ── CONTENT ── */
+    .content {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 64px 48px 96px;
+    }
+
+    .terms-section {
+      margin-bottom: 56px;
+      padding-bottom: 56px;
+      border-bottom: 1px solid var(--rule);
+    }
+    .terms-section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .section-label {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      margin-bottom: 20px;
+    }
+
+    .terms-section h2 {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 1.25;
+      color: var(--ink);
+      margin-bottom: 24px;
+    }
+
+    .terms-grid {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 0;
+      border: 1px solid var(--rule);
+    }
+    .terms-row {
+      display: contents;
+    }
+    .terms-key {
+      padding: 18px 24px;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--ink-soft);
+      border-bottom: 1px solid var(--rule);
+      border-right: 1px solid var(--rule);
+      background: var(--bg-warm);
+    }
+    .terms-val {
+      padding: 18px 24px;
+      font-size: 0.9rem;
+      color: var(--ink);
+      border-bottom: 1px solid var(--rule);
+      line-height: 1.65;
+    }
+    .terms-row:last-child .terms-key,
+    .terms-row:last-child .terms-val {
+      border-bottom: none;
+    }
+
+    .note-box {
+      background: var(--accent-lt);
+      border-left: 3px solid var(--accent);
+      padding: 20px 24px;
+      font-size: 0.88rem;
+      color: var(--ink-soft);
+      line-height: 1.7;
+      margin-top: 24px;
+    }
+
+    .disclaimer {
+      background: var(--bg-warm);
+      border: 1px solid var(--rule);
+      padding: 28px 32px;
+      font-size: 0.85rem;
+      color: var(--ink-soft);
+      line-height: 1.75;
+    }
+    .disclaimer p + p { margin-top: 12px; }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--rule);
+      padding: 32px 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer-name {
+      font-family: var(--serif);
+      font-size: 0.95rem;
+      color: var(--ink-soft);
+    }
+    .footer-links {
+      display: flex;
+      gap: 24px;
+    }
+    .footer-links a {
+      font-size: 0.78rem;
+      color: var(--ink-muted);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--accent); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 720px) {
+      nav { padding: 20px 24px; }
+      .page-header { padding: 48px 24px 40px; }
+      .content { padding: 48px 24px 72px; }
+      .terms-grid { grid-template-columns: 1fr; }
+      .terms-key {
+        border-right: none;
+        border-bottom: none;
+        padding-bottom: 4px;
+      }
+      .terms-val { border-bottom: 1px solid var(--rule); }
+      .terms-row:last-child .terms-val { border-bottom: none; }
+      footer { flex-direction: column; gap: 16px; padding: 24px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-name">Natalya Pavlova</a>
+  <a href="index.html#apply" class="nav-cta">Book your free session</a>
+</nav>
+
+<!-- PAGE HEADER -->
+<header class="page-header">
+  <p class="page-eyebrow">How we work together</p>
+  <h1>Terms of Work</h1>
+  <p>A few practical details to make our work together straightforward. If you have any questions before booking, feel free to reach out directly.</p>
+</header>
+
+<!-- CONTENT -->
+<main class="content">
+
+  <!-- PAYMENT -->
+  <div class="terms-section">
+    <p class="section-label">Payment</p>
+    <h2>Fees & payment terms</h2>
+    <div class="terms-grid">
+      <div class="terms-row">
+        <div class="terms-key">Single session</div>
+        <div class="terms-val">$150 — payment in full required at least 24 hours before the session.</div>
+      </div>
+      <div class="terms-row">
+        <div class="terms-key">3-session package</div>
+        <div class="terms-val">$400 — payment in full required before the first session.</div>
+      </div>
+      <div class="terms-row">
+        <div class="terms-key">Longer-term advisory</div>
+        <div class="terms-val">Pricing and payment schedule agreed individually. Details confirmed in writing before work begins.</div>
+      </div>
+      <div class="terms-row">
+        <div class="terms-key">Payment methods</div>
+        <div class="terms-val">Bank transfer in USD or UAH (at the official exchange rate on the date of payment). An invoice will be issued after booking.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CANCELLATION -->
+  <div class="terms-section">
+    <p class="section-label">Scheduling</p>
+    <h2>Cancellation & rescheduling</h2>
+    <div class="terms-grid">
+      <div class="terms-row">
+        <div class="terms-key">More than 24 hours notice</div>
+        <div class="terms-val">Sessions may be cancelled or rescheduled at no charge. Prepayment is carried forward or refunded in full.</div>
+      </div>
+      <div class="terms-row">
+        <div class="terms-key">Less than 24 hours notice</div>
+        <div class="terms-val">Late cancellations cannot be rescheduled or refunded, as the time has been held exclusively for you.</div>
+      </div>
+      <div class="terms-row">
+        <div class="terms-key">No-show</div>
+        <div class="terms-val">If you're unable to attend, please let me know in advance — sessions missed without notice cannot be rescheduled.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SESSION FORMAT -->
+  <div class="terms-section">
+    <p class="section-label">Format</p>
+    <h2>How sessions are conducted</h2>
+    <div class="terms-grid">
+      <div class="terms-row">
+        <div class="terms-key">Format</div>
+        <div class="terms-val">All sessions are held online via Google Meet.</div>
+      </div>
+      <div class="terms-row">
+        <div class="terms-key">Duration</div>
+        <div class="terms-val">60 minutes per session.</div>
+      </div>
+      <div class="terms-row">
+        <div class="terms-key">Language</div>
+        <div class="terms-val">English, Ukrainian, or Russian — your choice.</div>
+      </div>
+      <div class="terms-row">
+        <div class="terms-key">Package validity</div>
+        <div class="terms-val">3-session packages are valid for 6 months from the date of payment. For longer-term advisory arrangements, validity is agreed individually.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONFIDENTIALITY -->
+  <div class="terms-section">
+    <p class="section-label">Confidentiality</p>
+    <h2>Privacy & discretion</h2>
+    <div class="terms-grid">
+      <div class="terms-row">
+        <div class="terms-key">Confidentiality</div>
+        <div class="terms-val">Everything discussed in our sessions is strictly confidential.</div>
+      </div>
+      <div class="terms-row">
+        <div class="terms-key">Recording</div>
+        <div class="terms-val">Sessions are not recorded without the explicit consent of both parties.</div>
+      </div>
+      <div class="terms-row">
+        <div class="terms-key">Third parties</div>
+        <div class="terms-val">Client information is never shared with or disclosed to third parties.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DISCLAIMER -->
+  <div class="terms-section">
+    <p class="section-label">Scope of work</p>
+    <h2>A note on what this is — and isn't</h2>
+    <div class="disclaimer">
+      <p>Career advisory and coaching is a forward-looking, collaborative process focused on professional goals, decisions, and transitions. It is not a substitute for psychological counselling, legal advice, or financial planning.</p>
+      <p>If at any point it becomes clear that a different kind of support would serve you better, I will say so directly and, where possible, suggest appropriate resources.</p>
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <span class="footer-name">Natalya Pavlova — Career & Leadership Advisory</span>
+  <div class="footer-links">
+    <a href="https://www.linkedin.com/in/natalyapavlova" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="mailto:2natalyapavlova@gmail.com">Email</a>
