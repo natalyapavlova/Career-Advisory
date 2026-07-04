@@ -342,7 +342,7 @@
       text-transform: uppercase;
       color: var(--ink-soft);
     }
-    .field input,
+    .field input:not([type="checkbox"]),
     .field select,
     .field textarea {
       background: var(--bg);
@@ -357,7 +357,7 @@
       border-radius: 0;
       width: 100%;
     }
-    .field input:focus,
+    .field input:not([type="checkbox"]):focus,
     .field select:focus,
     .field textarea:focus {
       border-color: var(--accent);
@@ -387,9 +387,16 @@
       margin-top: 3px;
       width: 16px;
       height: 16px;
+      min-width: 16px;
+      min-height: 16px;
       flex-shrink: 0;
       accent-color: var(--accent);
       cursor: pointer;
+      -webkit-appearance: checkbox;
+      appearance: checkbox;
+      border-radius: 0;
+      padding: 0;
+      border: 1px solid var(--rule);
     }
     .checkbox-label a {
       color: var(--accent);
